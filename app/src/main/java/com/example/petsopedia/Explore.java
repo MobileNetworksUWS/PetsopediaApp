@@ -35,5 +35,49 @@ Button birds;
                 startActivity(intent);
             }
         });
+
+        cats.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(Explore.this, Cats.class);
+
+                startActivity(intent);
+            }
+        });
+
+        rabbits.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(Explore.this, Rabbits.class);
+
+                startActivity(intent);
+            }
+        });
+
+        hamsters.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(Explore.this, Hamsters.class);
+
+                startActivity(intent);
+            }
+        });
+
+        birds.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(Explore.this, Birds.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

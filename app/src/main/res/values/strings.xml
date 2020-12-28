@@ -56,7 +56,7 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
 
-    <!-- explore page -->
+    <!-- explore/animal page -->
     <string name="explore_title">Explore</string>
     <string name="dogs">Dogs</string>
     <string name="cats">Cats</string>
@@ -65,11 +65,5 @@
     <string name="hamsters">Hamsters</string>
     <string name="choose_breed">Choose a Breed:</string>
 
-    <!-- dog page -->
-    <string name="dogs_title">Dogs</string>
-    <string-array name="dog_breed">
-        <item>Alsatian</item>
-        <item>Border Collie</item>
-        <item>Labrador</item>
-    </string-array>
+
 </resources>

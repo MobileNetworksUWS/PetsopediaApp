@@ -1,8 +1,6 @@
 package com.example.petsopedia;
 
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,20 +9,20 @@ import com.webianks.library.scroll_choice.ScrollChoice;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dogs extends AppCompatActivity {
+public class Birds extends AppCompatActivity {
 
     List<String> datas = new ArrayList<>();
-    ScrollChoice dogScrollChoice;
+    ScrollChoice birdScrollChoice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dogs);
+        setContentView(R.layout.birds);
 
         initViews();
         loadData();
 
-        dogScrollChoice.addItems(datas,0);
+        birdScrollChoice.addItems(datas,0);
 //        dogScrollChoice.setOnItemSelectedListener(new ScrollChoice.OnItemSelectedListener() {
 //            @Override
 //            public void onItemSelected(ScrollChoice scrollChoice, int position, String name) {
@@ -34,13 +32,13 @@ public class Dogs extends AppCompatActivity {
     }
 
     private void loadData() {
-        datas.add("Alsatian");
-        datas.add("Border Collie");
-        datas.add("Labrador");
+        datas.add("Cockatiel");
+        datas.add("Parakeet");
+        datas.add("Parrot");
     }
 
     private void initViews() {
-        dogScrollChoice = (ScrollChoice)findViewById(R.id.dogChoices);
+        birdScrollChoice = (ScrollChoice)findViewById(R.id.birdChoices);
     }
 
 }
