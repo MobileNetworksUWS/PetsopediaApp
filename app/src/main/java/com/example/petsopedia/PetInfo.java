@@ -15,8 +15,6 @@ import java.util.Map;
 
 public class PetInfo extends AppCompatActivity {
 
-    Button activity_main;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,24 +38,9 @@ public class PetInfo extends AppCompatActivity {
             ParentListItems.put(HoldItem, ChildList);
         }
 
-
         expandableListView = findViewById(R.id.listview);
         final ExpandableListAdapter expandableListAdapter = new ListAdapter(this, TitleList, ParentListItems);
         expandableListView.setAdapter(expandableListAdapter);
-        activity_main = (Button)findViewById(R.id.btn_return);
-
-        // ~~~ button for moving from this page to last page
-
-        activity_main.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-
-                Intent intent = new Intent(PetInfo.this, MainActivity.class);
-
-                startActivity(intent);
-            }
-        });
 
     }
 
