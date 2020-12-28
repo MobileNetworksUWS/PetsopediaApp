@@ -1,86 +1,21 @@
 package com.example.petsopedia;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ExpandableListAdapter;
-import android.widget.ExpandableListView;
+import android.widget.Button;
 import android.widget.Spinner;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    List<String> ChildList;
-    Map<String, List<String>> ParentListItems;
-    ExpandableListView expandableListView;
-
-    List<String> TitleList = new ArrayList<>();
-    {
-        TitleList.add("General Information");
-        TitleList.add("Personality");
-        TitleList.add("Nutrition");
-        TitleList.add("Common Health Problems");
-        TitleList.add("Sounds");
-    }
-
-    String[] generalInfo = {
-            "Height", "Weight", "Coat", "Colour", "Lifespan"
-    };
-    String[] personalityInfo = {
-            "This is where information about the personality of the pet goes"
-    };
-    String[] nutritionInfo = {
-            "Nutritional information goes here"
-    };
-    String[] healthInfo = {
-            "Health issues"
-    };
-    String[] soundInfo = {
-            "[insert audio of pet sound here]"
-    };
-    String[] defaultName = {
-            "Petsopedia"
-    };
-
+    Button pet_info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ParentListItems = new LinkedHashMap<>();
-        for (String HoldItem : TitleList) {
-            if (HoldItem.equals("General Information")) {
-                loadChild(generalInfo);
-            } else if (HoldItem.equals("Personality")) {
-                loadChild(personalityInfo);
-            } else if (HoldItem.equals("Nutrition")) {
-                loadChild(nutritionInfo);
-            } else if (HoldItem.equals("Common Health Problems")) {
-                loadChild(healthInfo);
-            } else if (HoldItem.equals("Sounds")) {
-                loadChild(soundInfo);
-            } else
-                loadChild(defaultName);
-
-            ParentListItems.put(HoldItem, ChildList);
-        }
-        expandableListView = findViewById(R.id.listview);
-        final ExpandableListAdapter expandableListAdapter = new com.example.petsopedia.ListAdapter(this, TitleList, ParentListItems);
-        expandableListView.setAdapter(expandableListAdapter);
-
-
-
 
         Spinner ageSpinner = (Spinner) findViewById(R.id.age_spinner);
         Spinner typeSpinner = (Spinner) findViewById(R.id.which_spinner);
@@ -107,18 +42,28 @@ public class MainActivity extends AppCompatActivity {
         weightAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         activityAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-// Apply the adapter to the spinner
+// ~~~ apply the adapter to the spinner
         ageSpinner.setAdapter(ageAdapter);
         typeSpinner.setAdapter(typeAdapter);
         breedSpinner.setAdapter(breedAdapter);
         weightSpinner.setAdapter(weightAdapter);
         activitySpinner.setAdapter(activityAdapter);
-    }
 
-    private void loadChild(String[] ParentElementName) {
+        // ~~~ button for moving from first page to next page
 
-        ChildList = new ArrayList<>();
-        Collections.addAll(ChildList, ParentElementName);
+        pet_info = (Button)findViewById(R.id.main_button);
+
+        pet_info.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(MainActivity.this, PetInfo.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

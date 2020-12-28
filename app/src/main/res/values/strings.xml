@@ -51,4 +51,9 @@
         <item>Very Active!</item>
     </string-array>
 
+    <!--pet information -->
+    <string name="info_title">Pet Info</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
 </resources>
