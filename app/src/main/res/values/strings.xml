@@ -7,20 +7,10 @@
 
 <!--pet questionnaire-->
     <string name="pet_name">Pets Name</string>
-    <string name="pet_age">Pets Age</string>
     <string name="pet_type">Which Pet?</string>
     <string name="pet_breed">What Breed?</string>
-    <string name="pet_weight">Pets Weight</string>
-    <string name="pet_activity">Activity Level</string>
-
 
 <!--    spinners-->
-    <string-array name="pet_age">
-        <item>0–3 years</item>
-        <item>4–8 years</item>
-        <item>8–11 years</item>
-        <item>12+ years</item>
-    </string-array>
 
     <string-array name="pet_type">
         <item>Dog</item>
@@ -31,24 +21,34 @@
     </string-array>
 
 <!--    breed spinner will need to be pulled from database depending on which pet is selected-->
-    <string-array name="pet_breed">
+    <string-array name="dog_breeds">
         <item>Alsatian</item>
         <item>Border Collie</item>
         <item>Labrador</item>
     </string-array>
 
-    <string-array name="pet_weight">
-        <item>0–5kg</item>
-        <item>5–10kg</item>
-        <item>10–15kg</item>
-        <item>15–20kg</item>
-        <item>20kg+</item>
+    <string-array name="cat_breeds">
+        <item>Alsatian</item>
+        <item>Border Collie</item>
+        <item>Labrador</item>
     </string-array>
 
-    <string-array name="pet_activity">
-        <item>Not Very Active..</item>
-        <item>Somewhat Active</item>
-        <item>Very Active!</item>
+    <string-array name="rabbit_breeds">
+        <item>Alsatian</item>
+        <item>Border Collie</item>
+        <item>Labrador</item>
+    </string-array>
+
+    <string-array name="hamster_breeds">
+        <item>Alsatian</item>
+        <item>Border Collie</item>
+        <item>Labrador</item>
+    </string-array>
+
+    <string-array name="bird_breeds">
+        <item>Alsatian</item>
+        <item>Border Collie</item>
+        <item>Labrador</item>
     </string-array>
 
     <!--pet information -->
