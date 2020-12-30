@@ -22,8 +22,8 @@ Button birds;
         dogs = (Button)findViewById(R.id.dogsBtn);
         cats = (Button)findViewById(R.id.catsBtn);
         rabbits = (Button)findViewById(R.id.rabbitsBtn);
-        hamsters = (Button)findViewById(R.id.hamstersBtn);
-        birds = (Button)findViewById(R.id.birdsBtn);
+//        hamsters = (Button)findViewById(R.id.hamstersBtn);
+//        birds = (Button)findViewById(R.id.birdsBtn);
 
         dogs.setOnClickListener(new View.OnClickListener() {
 
@@ -58,26 +58,26 @@ Button birds;
             }
         });
 
-        hamsters.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-
-                Intent intent = new Intent(Explore.this, Hamsters.class);
-
-                startActivity(intent);
-            }
-        });
-
-        birds.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-
-                Intent intent = new Intent(Explore.this, Birds.class);
-
-                startActivity(intent);
-            }
-        });
+//        hamsters.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//
+//                Intent intent = new Intent(Explore.this, Hamsters.class);
+//
+//                startActivity(intent);
+//            }
+//        });
+//
+//        birds.setOnClickListener(new View.OnClickListener() {
+//
+//            public void onClick(View v)
+//            {
+//
+//                Intent intent = new Intent(Explore.this, Birds.class);
+//
+//                startActivity(intent);
+//            }
+//        });
     }
 }

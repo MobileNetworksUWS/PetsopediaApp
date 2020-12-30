@@ -6,17 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="391dp"
-        android:layout_height="240dp"
-        android:contentDescription="@string/welcome_image"
+    <Button
+        android:id="@+id/infoBtn"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:background="@color/standard_yellow"
+        android:fontFamily="serif"
+        android:text="Pet Info (Testing)"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248"
-        app:srcCompat="@drawable/cole_welcome" />
+        app:layout_constraintVertical_bias="0.862" />
 
     <Button
         android:id="@+id/exploreBtn"
@@ -31,22 +34,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
-
-    <Button
-        android:id="@+id/infoBtn"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:background="@color/standard_yellow"
-        android:fontFamily="serif"
-        android:text="Pet Info (Testing Purposes)"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.767" />
 
     <Button
         android:id="@+id/questionnaireBtn"
@@ -61,7 +49,19 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.667" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="366dp"
+        android:layout_height="282dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194"
+        app:srcCompat="@drawable/_2__animal_care1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

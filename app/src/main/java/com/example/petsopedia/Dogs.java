@@ -25,12 +25,6 @@ public class Dogs extends AppCompatActivity {
         loadData();
 
         dogScrollChoice.addItems(datas,0);
-//        dogScrollChoice.setOnItemSelectedListener(new ScrollChoice.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(ScrollChoice scrollChoice, int position, String name) {
-//
-//            }
-//        });
     }
 
     private void loadData() {

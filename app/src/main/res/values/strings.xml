@@ -20,37 +20,6 @@
         <item>Bird</item>
     </string-array>
 
-<!--    breed spinner will need to be pulled from database depending on which pet is selected-->
-    <string-array name="dog_breeds">
-        <item>Alsatian</item>
-        <item>Border Collie</item>
-        <item>Labrador</item>
-    </string-array>
-
-    <string-array name="cat_breeds">
-        <item>Alsatian</item>
-        <item>Border Collie</item>
-        <item>Labrador</item>
-    </string-array>
-
-    <string-array name="rabbit_breeds">
-        <item>Alsatian</item>
-        <item>Border Collie</item>
-        <item>Labrador</item>
-    </string-array>
-
-    <string-array name="hamster_breeds">
-        <item>Alsatian</item>
-        <item>Border Collie</item>
-        <item>Labrador</item>
-    </string-array>
-
-    <string-array name="bird_breeds">
-        <item>Alsatian</item>
-        <item>Border Collie</item>
-        <item>Labrador</item>
-    </string-array>
-
     <!--pet information -->
     <string name="info_title">Pet Info</string>
     <string name="male">Male</string>
