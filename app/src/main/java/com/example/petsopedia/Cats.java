@@ -1,6 +1,9 @@
 package com.example.petsopedia;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +14,7 @@ import java.util.List;
 
 public class Cats extends AppCompatActivity {
 
+    Button backbutton;
     List<String> datas = new ArrayList<>();
     ScrollChoice catScrollChoice;
 
@@ -18,6 +22,7 @@ public class Cats extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cats);
+        backbutton = (Button) findViewById(R.id.backCats);
 
         initViews();
         loadData();
@@ -29,6 +34,17 @@ public class Cats extends AppCompatActivity {
 //
 //            }
 //        });
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(android.view.View v)
+            {
+
+                Intent intent = new Intent(Cats.this, Explore.class);
+
+                startActivity(intent);
+            }
+        });
     }
 
     private void loadData() {
