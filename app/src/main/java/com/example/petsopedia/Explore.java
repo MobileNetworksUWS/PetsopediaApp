@@ -13,6 +13,7 @@ Button cats;
 Button rabbits;
 Button hamsters;
 Button birds;
+Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ Button birds;
         rabbits = (Button)findViewById(R.id.rabbitsBtn);
 //        hamsters = (Button)findViewById(R.id.hamstersBtn);
 //        birds = (Button)findViewById(R.id.birdsBtn);
+        button = (Button)findViewById(R.id.backExplore);
 
         dogs.setOnClickListener(new View.OnClickListener() {
 
@@ -79,5 +81,16 @@ Button birds;
 //                startActivity(intent);
 //            }
 //        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(android.view.View v)
+            {
+
+                Intent intent = new Intent(Explore.this, MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -15,10 +15,24 @@ import java.util.Map;
 
 public class PetInfo extends AppCompatActivity {
 
+    Button backbutton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pet_info);
+        backbutton = (Button)findViewById(R.id.backPetInfo);
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v)
+            {
+
+                Intent intent = new Intent(PetInfo.this, MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
 
         ParentListItems = new LinkedHashMap<>();
         for (String HoldItem : TitleList) {

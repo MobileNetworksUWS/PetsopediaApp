@@ -8,15 +8,28 @@ import android.widget.Button;
 import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.List;
-
 
 public class Questionnaire extends AppCompatActivity {
+
+    Button backbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questionnaire);
+        backbutton = (Button)findViewById(R.id.backQuestionnaire);
+
+
+        backbutton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(android.view.View v)
+            {
+
+                Intent intent = new Intent(Questionnaire.this, MainActivity.class);
+
+                startActivity(intent);
+            }
+        });
 
        // String[] typeList = {"Dogs", "Rabbits","Cats"};
        String[] dogBreeds = {"Alsatian", "Border Collie","Labrador"};
@@ -90,6 +103,7 @@ public class Questionnaire extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
+
         });
         }
 
