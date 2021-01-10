@@ -1,43 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--////-->
 <RelativeLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:map="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-            <fragment
-            android:id="@+id/map"
-            android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:context=".MapsActivity" />
+    android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <!--    <Button-->
+    <!--        android:id="@+id/B_search"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="45dp"-->
+    <!--        android:layout_alignParentTop="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_toEndOf="@+id/TF_location"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="Search"-->
+    <!--        android:layout_toRightOf="@+id/TF_location" />-->
 
-        xmlns:tools="http://schemas.android.com/tools"
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/btn_vets"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="635dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="onClick"
+        android:text="Vets" />
+
+    <Button
+        android:id="@+id/btn_petstore"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="635dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="onClick"
+        android:text="Pet Store" />
+
+    <Button
+        android:id="@+id/btn_parks"
+        android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btnRestaurant"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nearby Restaurants" />
-
-        <Button
-            android:id="@+id/btnHospital"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nearby Hospitals" />
-
-        <Button
-            android:id="@+id/btnSchool"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nearby Schools" />
-
-    </LinearLayout>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="635dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="56dp"
+        android:onClick="onClick"
+        android:text="Parks" />
 
 </RelativeLayout>
+
+

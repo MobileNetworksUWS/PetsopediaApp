@@ -12,7 +12,6 @@ Button dogs;
 Button cats;
 Button rabbits;
 Button hamsters;
-Button birds;
 Button button;
 
     @Override
@@ -71,16 +70,6 @@ Button button;
 //            }
 //        });
 //
-//        birds.setOnClickListener(new View.OnClickListener() {
-//
-//            public void onClick(View v)
-//            {
-//
-//                Intent intent = new Intent(Explore.this, Birds.class);
-//
-//                startActivity(intent);
-//            }
-//        });
 
         button.setOnClickListener(new View.OnClickListener() {
 
