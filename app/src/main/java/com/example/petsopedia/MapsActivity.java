@@ -63,6 +63,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.petsopedia);
+        getSupportActionBar().setTitle("");
+
         setContentView(R.layout.activity_maps);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
