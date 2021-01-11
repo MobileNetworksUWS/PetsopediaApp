@@ -7,17 +7,19 @@
     tools:context=".Questionnaire">
 
 
-    <Button
+    <ImageView
         android:id="@+id/backQuestionnaire"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/back_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/textView"
+        android:src="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/which_spinner"
@@ -126,15 +128,14 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="247dp"
-        android:layout_height="266dp"
+        android:id="@+id/imageView5"
+        android:layout_width="393dp"
+        android:layout_height="444dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.193"
-        app:srcCompat="@drawable/_00__cuddling_a_cat" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/cat2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

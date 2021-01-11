@@ -33,7 +33,7 @@
     <string name="birds">Birds</string>
     <string name="hamsters">Hamsters</string>
     <string name="choose_breed">Choose a Breed:</string>
-    <string name="back_button">Back</string>
+    <string name="back_button"></string>
     <string name="go_button">Go</string>
     <string name="title_activity_maps">Map</string>
 

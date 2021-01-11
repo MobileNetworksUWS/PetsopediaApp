@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Explore extends AppCompatActivity {
@@ -11,7 +13,7 @@ public class Explore extends AppCompatActivity {
 Button dogs;
 Button cats;
 Button rabbits;
-Button button;
+ImageView button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +29,7 @@ Button button;
         rabbits = (Button)findViewById(R.id.rabbitsBtn);
 //        hamsters = (Button)findViewById(R.id.hamstersBtn);
 //        birds = (Button)findViewById(R.id.birdsBtn);
-        button = (Button)findViewById(R.id.backExplore);
+        button = (ImageView) findViewById(R.id.backExplore);
 
         dogs.setOnClickListener(new View.OnClickListener() {
 

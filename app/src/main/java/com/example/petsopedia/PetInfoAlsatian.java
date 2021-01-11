@@ -2,32 +2,27 @@ package com.example.petsopedia;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PetInfo extends AppCompatActivity {
+public class PetInfoAlsatian extends AppCompatActivity {
 
     LinearLayout playlistview;
     ImageView backbutton;
@@ -46,24 +41,24 @@ public class PetInfo extends AppCompatActivity {
         getSupportActionBar().setIcon(R.drawable.petsopedia);
         getSupportActionBar().setTitle("");
 
-        setContentView(R.layout.pet_info);
+        setContentView(R.layout.pet_info_alsatian);
         playPauseIcon = findViewById(R.id.playpauseicon);
 
         playlistview = (LinearLayout) findViewById(R.id.playlistlistview);
-//        playlistview.setVisibility(View.INVISIBLE);
+        playlistview.setVisibility(View.INVISIBLE);
 
         Button soundInfo = (Button) findViewById(R.id.soundInfo);
-//        soundInfo.setOnClickListener(new View.OnClickListener() {
-//            boolean visible;
-//
-//            @Override
-//            public void onClick(View view) {
-//
-//                visible = !visible;
-//                playlistview.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
-//            }
-//
-//        });
+        soundInfo.setOnClickListener(new View.OnClickListener() {
+            boolean visible;
+
+            @Override
+            public void onClick(View view) {
+
+                visible = !visible;
+                playlistview.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
+            }
+
+        });
 
         mediaPlayer = new MediaPlayer();
         mediaPlayer = MediaPlayer.create(this, R.raw.dogsound);
@@ -133,7 +128,7 @@ public class PetInfo extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfo.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoAlsatian.this, MainActivity.class);
 
                 startActivity(intent);
             }

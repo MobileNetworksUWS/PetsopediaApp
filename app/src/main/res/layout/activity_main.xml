@@ -82,15 +82,16 @@ android:background="@drawable/buttons"
         app:layout_constraintVertical_bias="0.667" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="359dp"
-        android:layout_height="262dp"
+        android:id="@+id/imageView4"
+        android:layout_width="412dp"
+        android:layout_height="470dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285"
-        app:srcCompat="@drawable/_2__animal_care__1_" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/explore" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

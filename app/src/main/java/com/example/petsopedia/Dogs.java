@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -20,6 +21,9 @@ public class Dogs extends AppCompatActivity {
 
     Button backbutton;
     String[] breedArray = {"Alsatian","Border Collie","Labrador"};
+    final int ALSATIAN = 0;
+    final int COLLIE = 1;
+    final int LABRADOR = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,25 +53,33 @@ public class Dogs extends AppCompatActivity {
             }
         });
 
-//        gobutton.setOnClickListener(new View.OnClickListener() {
-//        public void onClick(View v)
-//        {
-//
-//            switch (v) {
-//                case "Alsatian":
-//                    Intent intent = new Intent(Dogs.this, PetInfo.class);
-//
-//                    startActivity(intent);
-//                    break;
-//
-//
-//                case R.id.btn_parks:
-//
-//                    break;
-//            }
-//        }
-//
-//        });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position,long arg3)
+            {
+                switch (position) {
+                    case ALSATIAN:
+                        Intent alsatian = new Intent(Dogs.this, PetInfoAlsatian.class);
+
+                        startActivity(alsatian);
+                        break;
+
+
+                    case COLLIE:
+                        Intent collie = new Intent(Dogs.this, PetInfoCollie.class);
+
+                        startActivity(collie);
+                        break;
+
+                    case LABRADOR:
+                        Intent labrador = new Intent(Dogs.this, PetInfoLabrador.class);
+
+                        startActivity(labrador);
+                        break;
+                }
+            }
+        });
+
     }
 
 

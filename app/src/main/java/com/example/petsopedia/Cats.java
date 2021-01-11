@@ -3,6 +3,7 @@ package com.example.petsopedia;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -18,6 +19,9 @@ public class Cats extends AppCompatActivity {
 
     Button backbutton;
     String[] breedArray = {"Bombay","British Shorthair","Persian"};
+    final int BOMBAY = 0;
+    final int SHORTHAIR = 1;
+    final int PERSIAN = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +48,33 @@ public class Cats extends AppCompatActivity {
                 Intent intent = new Intent(Cats.this, Explore.class);
 
                 startActivity(intent);
+            }
+        });
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int position,long arg3)
+            {
+                switch (position) {
+                    case BOMBAY:
+                        Intent bombay = new Intent(Cats.this, PetInfoBombay.class);
+
+                        startActivity(bombay);
+                        break;
+
+
+                    case SHORTHAIR:
+                        Intent shorthair = new Intent(Cats.this, PetInfoShorthair.class);
+
+                        startActivity(shorthair);
+                        break;
+
+                    case PERSIAN:
+                        Intent persian = new Intent(Cats.this, PetInfoPersian.class);
+
+                        startActivity(persian);
+                        break;
+                }
             }
         });
     }

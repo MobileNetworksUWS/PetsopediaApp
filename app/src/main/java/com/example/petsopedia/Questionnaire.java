@@ -1,17 +1,19 @@
 package com.example.petsopedia;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import androidx.appcompat.app.AppCompatActivity;
 
 
 public class Questionnaire extends AppCompatActivity {
 
-    Button backbutton;
+    ImageView backbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +23,7 @@ public class Questionnaire extends AppCompatActivity {
         getSupportActionBar().setTitle("");
 
         setContentView(R.layout.questionnaire);
-        backbutton = (Button)findViewById(R.id.backQuestionnaire);
+        backbutton = (ImageView)findViewById(R.id.backQuestionnaire);
 
 
         backbutton.setOnClickListener(new View.OnClickListener() {
