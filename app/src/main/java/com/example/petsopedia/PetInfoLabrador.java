@@ -172,16 +172,16 @@ public class PetInfoLabrador extends AppCompatActivity {
     }
 
     String[] generalInfo = {
-            "Height", "Weight", "Coat", "Colour", "Lifespan"
+            "HEIGHT: 55-57cm", "WEIGHT: 25-34kg", "COAT: Short & dense", "COLOUR: Yellow, black or chocolate", "LIFESPAN: 12-13 yrs"
     };
     String[] personalityInfo = {
-            "This is where information about the personality of the pet goes"
+            "Kind, responsive, enthusiastic, active, playful. Good with children and friendly to other pets."
     };
     String[] nutritionInfo = {
-            "Nutritional information goes here"
+            "Needs between 1500 and 1875 calories per day, depending on body weight."
     };
     String[] healthInfo = {
-            "Health issues"
+            "Health issues include hip dysplasia, elbow dysplasia, obesity and progressive retinal atrophy."
     };
     String[] defaultName = {
             ""
