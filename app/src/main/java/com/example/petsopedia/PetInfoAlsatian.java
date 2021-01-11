@@ -34,6 +34,7 @@ public class PetInfoAlsatian extends AppCompatActivity {
     int totalLength;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
