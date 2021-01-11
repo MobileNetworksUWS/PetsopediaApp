@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/mainTitle"
+        android:layout_width="248dp"
+        android:layout_height="49dp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textSize="@dimen/h1_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
     <Button
         android:id="@+id/infoBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:background="@color/standard_yellow"
         android:fontFamily="serif"
         android:text="Pet Info (Testing)"
         android:textAllCaps="false"
@@ -25,7 +39,6 @@
         android:id="@+id/mapBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:background="@color/standard_yellow"
         android:fontFamily="serif"
         android:text="Map"
         android:textAllCaps="false"
@@ -40,7 +53,6 @@
         android:id="@+id/exploreBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:background="@color/standard_yellow"
         android:fontFamily="serif"
         android:text="Explore"
         android:textAllCaps="false"
@@ -55,7 +67,6 @@
         android:id="@+id/questionnaireBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
-        android:background="@color/standard_yellow"
         android:fontFamily="serif"
         android:text="Questionnaire"
         android:textAllCaps="false"
@@ -67,16 +78,15 @@
         app:layout_constraintVertical_bias="0.667" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="366dp"
-        android:layout_height="282dp"
+        android:id="@+id/imageView8"
+        android:layout_width="359dp"
+        android:layout_height="262dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.194"
-        app:srcCompat="@drawable/_2__animal_care1" />
+        app:layout_constraintVertical_bias="0.285"
+        app:srcCompat="@drawable/_2__animal_care__1_" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

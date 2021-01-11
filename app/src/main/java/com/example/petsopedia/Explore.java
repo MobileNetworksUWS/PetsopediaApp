@@ -11,7 +11,6 @@ public class Explore extends AppCompatActivity {
 Button dogs;
 Button cats;
 Button rabbits;
-Button hamsters;
 Button button;
 
     @Override
@@ -59,17 +58,6 @@ Button button;
             }
         });
 
-//        hamsters.setOnClickListener(new View.OnClickListener() {
-//
-//            public void onClick(View v)
-//            {
-//
-//                Intent intent = new Intent(Explore.this, Hamsters.class);
-//
-//                startActivity(intent);
-//            }
-//        });
-//
 
         button.setOnClickListener(new View.OnClickListener() {
 

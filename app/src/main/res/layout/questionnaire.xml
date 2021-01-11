@@ -12,10 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
 
     <Spinner
         android:id="@+id/which_spinner"
@@ -23,6 +25,7 @@
         android:layout_height="@dimen/spinner_height"
         android:labelFor="@id/which_spinner"
         android:text="@string/pet_type"
+        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -36,6 +39,7 @@
         android:layout_height="@dimen/spinner_height"
         android:labelFor="@id/breed_spinner"
         android:text="@string/pet_breed"
+        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -53,6 +57,7 @@
         android:inputType="textPersonName"
         android:labelFor="@string/pet_name"
         android:text=""
+        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -65,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome_message"
+        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -94,11 +100,13 @@
                 android:id="@+id/maleRadio"
                 android:layout_width="108dp"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:text="@string/male" />
 
             <RadioButton
                 android:id="@+id/femaleRadio"
                 android:layout_width="108dp"
+                android:fontFamily="serif"
                 android:layout_height="match_parent"
                 android:text="@string/female" />
 
@@ -106,25 +114,27 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="344dp"
-        android:layout_height="376dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/_54__cuddling_cat" />
-
     <Button
         android:id="@+id/goQuestionnaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="160dp"
         android:layout_marginBottom="16dp"
         android:text="@string/go_button"
+        android:fontFamily="serif"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="247dp"
+        android:layout_height="266dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193"
+        app:srcCompat="@drawable/_00__cuddling_a_cat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

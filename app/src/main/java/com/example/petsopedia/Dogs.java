@@ -2,8 +2,12 @@ package com.example.petsopedia;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,8 +19,7 @@ import java.util.List;
 public class Dogs extends AppCompatActivity {
 
     Button backbutton;
-    List<String> datas = new ArrayList<>();
-    ScrollChoice dogScrollChoice;
+    String[] breedArray = {"Alsatian","Border Collie","Labrador"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +27,12 @@ public class Dogs extends AppCompatActivity {
         setContentView(R.layout.dogs);
         backbutton = (Button) findViewById(R.id.backDogs);
 
-        initViews();
-        loadData();
 
-        dogScrollChoice.addItems(datas,0);
+        ArrayAdapter adapter = new ArrayAdapter<String>(this,
+                R.layout.list_view, breedArray);
+
+        ListView listView = (ListView) findViewById(R.id.mobile_list);
+        listView.setAdapter(adapter);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -39,16 +44,27 @@ public class Dogs extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        gobutton.setOnClickListener(new View.OnClickListener() {
+//        public void onClick(View v)
+//        {
+//
+//            switch (v) {
+//                case "Alsatian":
+//                    Intent intent = new Intent(Dogs.this, PetInfo.class);
+//
+//                    startActivity(intent);
+//                    break;
+//
+//
+//                case R.id.btn_parks:
+//
+//                    break;
+//            }
+//        }
+//
+//        });
     }
 
-    private void loadData() {
-        datas.add("Alsatian");
-        datas.add("Border Collie");
-        datas.add("Labrador");
-    }
-
-    private void initViews() {
-        dogScrollChoice = (ScrollChoice)findViewById(R.id.dogChoices);
-    }
 
 }

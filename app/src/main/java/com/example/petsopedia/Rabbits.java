@@ -3,7 +3,9 @@ package com.example.petsopedia;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,8 +17,7 @@ import java.util.List;
 public class Rabbits extends AppCompatActivity {
 
     Button backbutton;
-    List<String> datas = new ArrayList<>();
-    ScrollChoice rabbitScrollChoice;
+    String[] breedArray = {"Dutch","English Lop","Flemish Giant"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +25,12 @@ public class Rabbits extends AppCompatActivity {
         setContentView(R.layout.rabbits);
         backbutton = (Button) findViewById(R.id.backRabbits);
 
-        initViews();
-        loadData();
 
-        rabbitScrollChoice.addItems(datas,0);
-//        dogScrollChoice.setOnItemSelectedListener(new ScrollChoice.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(ScrollChoice scrollChoice, int position, String name) {
-//
-//            }
-//        });
+        ArrayAdapter adapter = new ArrayAdapter<String>(this,
+                R.layout.list_view, breedArray);
+
+        ListView listView = (ListView) findViewById(R.id.mobile_list);
+        listView.setAdapter(adapter);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
 
@@ -45,16 +42,6 @@ public class Rabbits extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
-
-    private void loadData() {
-        datas.add("Dutch");
-        datas.add("English Lop");
-        datas.add("Flemish Giant");
-    }
-
-    private void initViews() {
-        rabbitScrollChoice = (ScrollChoice)findViewById(R.id.rabbitChoices);
     }
 
 }

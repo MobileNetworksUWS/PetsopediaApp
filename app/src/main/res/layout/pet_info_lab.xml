@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="409dp"
-        android:layout_height="57dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -18,34 +18,26 @@
         android:layout_marginStart="0dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="2dp"
-        android:layout_marginBottom="673dp"
+        android:layout_marginBottom="684dp"
         android:fontFamily="serif"
         android:gravity="center"
         android:paddingLeft="100dp"
         android:paddingRight="50dp"
-        android:text="Pet Info"
+        android:text="Labrador"
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/backPetInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginBottom="670dp"
+            android:id="@+id/backPetInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
         android:fontFamily="serif"
-        android:text="@string/back_button" />
+            android:text="@string/back_button" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"/>
 
 
     <Button
@@ -57,13 +49,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="224dp"
+        android:layout_marginStart="219dp"
         android:layout_marginLeft="6dp"
-        android:layout_marginTop="273dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="410dp"
-        android:fontFamily="serif"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="506dp"
         android:text="@string/female"
+        android:fontFamily="serif"
         android:textAllCaps="false"
         android:textSize="18dp" />
 
@@ -76,22 +68,21 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="272dp"
-        android:layout_marginEnd="223dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="228dp"
         android:layout_marginRight="6dp"
-        android:layout_marginBottom="411dp"
-        android:fontFamily="serif"
+        android:layout_marginBottom="507dp"
         android:text="@string/male"
+        android:fontFamily="serif"
         android:textAllCaps="false"
         android:textSize="18dp" />
 
     <ExpandableListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="317dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
         android:paddingBottom="60dp">
 
 
