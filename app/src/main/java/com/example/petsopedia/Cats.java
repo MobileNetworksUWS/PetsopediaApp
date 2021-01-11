@@ -22,6 +22,10 @@ public class Cats extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.petsopedia);
+        getSupportActionBar().setTitle("");
+
         setContentView(R.layout.cats);
         backbutton = (Button) findViewById(R.id.backCats);
 

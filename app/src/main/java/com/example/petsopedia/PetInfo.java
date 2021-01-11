@@ -41,6 +41,10 @@ public class PetInfo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.petsopedia);
+        getSupportActionBar().setTitle("");
+
         setContentView(R.layout.pet_info);
         playPauseIcon = findViewById(R.id.playpauseicon);
 

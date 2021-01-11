@@ -16,6 +16,10 @@ Button button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.petsopedia);
+        getSupportActionBar().setTitle("");
+
         setContentView(R.layout.explore);
 
         dogs = (Button)findViewById(R.id.dogsBtn);
