@@ -36,7 +36,6 @@ public class Dogs extends AppCompatActivity {
         setContentView(R.layout.dogs);
         backbutton = (ImageView) findViewById(R.id.backDogs);
 
-
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.list_view, breedArray);
 

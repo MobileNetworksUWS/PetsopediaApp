@@ -51,11 +51,11 @@
 
         <ImageView
             android:id="@+id/imageImg"
-            android:layout_width="wrap_content"
-            android:layout_height="249dp"
+            android:layout_width="match_parent"
+            android:layout_height="217dp"
+            android:contentDescription="@string/alsatian"
             android:padding="3dip"
-            android:src="@drawable/alsatian"
-            android:contentDescription="@string/labrador" />
+            android:src="@drawable/alsatian1" />
 
         <View
             android:layout_marginTop="10dp"
