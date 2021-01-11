@@ -128,7 +128,7 @@ public class PetInfoLop extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoLop.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoLop.this, Rabbits.class);
 
                 startActivity(intent);
             }

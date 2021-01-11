@@ -128,7 +128,7 @@ public class PetInfoPersian extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoPersian.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoPersian.this, Cats.class);
 
                 startActivity(intent);
             }

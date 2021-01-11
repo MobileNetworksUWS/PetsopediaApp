@@ -128,7 +128,7 @@ public class PetInfoDutch extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoDutch.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoDutch.this, Rabbits.class);
 
                 startActivity(intent);
             }

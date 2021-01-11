@@ -129,7 +129,7 @@ public class PetInfoGiant extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoGiant.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoGiant.this, Rabbits.class);
 
                 startActivity(intent);
             }

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class Cats extends AppCompatActivity {
 
-    Button backbutton;
+    ImageView backbutton;
     String[] breedArray = {"Bombay","British Shorthair","Persian"};
     final int BOMBAY = 0;
     final int SHORTHAIR = 1;
@@ -31,7 +32,7 @@ public class Cats extends AppCompatActivity {
         getSupportActionBar().setTitle("");
 
         setContentView(R.layout.cats);
-        backbutton = (Button) findViewById(R.id.backCats);
+        backbutton = (ImageView) findViewById(R.id.backCats);
 
         ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.list_view, breedArray);

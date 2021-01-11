@@ -22,64 +22,49 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <Button
-        android:id="@+id/infoBtn"
+        android:id="@+id/questionnaireBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:fontFamily="serif"
-android:background="@drawable/buttons"
-        android:text="Pet Info (Testing)"
+        android:text="Questionnaire"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintVertical_bias="0.696" />
 
     <Button
         android:id="@+id/mapBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:fontFamily="serif"
         android:text="Map"
-        android:background="@drawable/buttons"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95" />
+        app:layout_constraintVertical_bias="0.893" />
 
     <Button
         android:id="@+id/exploreBtn"
         android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
         android:fontFamily="serif"
         android:text="Explore"
-        android:background="@drawable/buttons"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767" />
-
-    <Button
-        android:id="@+id/questionnaireBtn"
-        android:layout_width="@dimen/button_width"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:text="Questionnaire"
-        android:background="@drawable/buttons"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintVertical_bias="0.796" />
 
     <ImageView
         android:id="@+id/imageView4"

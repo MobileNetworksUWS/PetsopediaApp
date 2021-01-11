@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
         questionnaire = (Button)findViewById(R.id.questionnaireBtn);
         explore = (Button)findViewById(R.id.exploreBtn);
-        pet_info = (Button)findViewById(R.id.infoBtn);
         map = (Button)findViewById(R.id.mapBtn);
 
         questionnaire.setOnClickListener(new View.OnClickListener() {
@@ -48,17 +47,6 @@ public class MainActivity extends AppCompatActivity {
             {
 
                 Intent intent = new Intent(MainActivity.this, Explore.class);
-
-                startActivity(intent);
-            }
-        });
-
-        pet_info.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v)
-            {
-
-                Intent intent = new Intent(MainActivity.this, PetInfo.class);
 
                 startActivity(intent);
             }

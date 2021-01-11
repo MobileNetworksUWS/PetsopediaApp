@@ -128,7 +128,7 @@ public class PetInfoCollie extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoCollie.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoCollie.this, Dogs.class);
 
                 startActivity(intent);
             }

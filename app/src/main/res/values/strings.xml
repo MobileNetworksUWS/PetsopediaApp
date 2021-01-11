@@ -27,6 +27,7 @@
 
     <!-- explore/animal page -->
     <string name="explore_title">Explore</string>
+    <string name="question_title">Your Pet</string>
     <string name="dogs">Dogs</string>
     <string name="cats">Cats</string>
     <string name="rabbits">Rabbits</string>

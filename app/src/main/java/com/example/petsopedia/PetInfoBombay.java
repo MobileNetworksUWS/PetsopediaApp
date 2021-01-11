@@ -128,7 +128,7 @@ public class PetInfoBombay extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoBombay.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoBombay.this, Cats.class);
 
                 startActivity(intent);
             }

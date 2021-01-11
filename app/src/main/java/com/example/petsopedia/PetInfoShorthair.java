@@ -128,7 +128,7 @@ public class PetInfoShorthair extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoShorthair.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoShorthair.this, Cats.class);
 
                 startActivity(intent);
             }

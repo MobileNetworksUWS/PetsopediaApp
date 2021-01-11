@@ -47,17 +47,18 @@
         app:layout_constraintVertical_bias="0.768"></ListView>
 
 
-    <Button
+    <ImageView
         android:id="@+id/backRabbits"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/back_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/textView"
+        android:src="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <ImageView
         android:id="@+id/imageView2"

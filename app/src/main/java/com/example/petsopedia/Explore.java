@@ -27,8 +27,6 @@ ImageView button;
         dogs = (Button)findViewById(R.id.dogsBtn);
         cats = (Button)findViewById(R.id.catsBtn);
         rabbits = (Button)findViewById(R.id.rabbitsBtn);
-//        hamsters = (Button)findViewById(R.id.hamstersBtn);
-//        birds = (Button)findViewById(R.id.birdsBtn);
         button = (ImageView) findViewById(R.id.backExplore);
 
         dogs.setOnClickListener(new View.OnClickListener() {

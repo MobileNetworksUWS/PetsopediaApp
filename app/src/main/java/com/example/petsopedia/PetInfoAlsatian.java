@@ -128,7 +128,7 @@ public class PetInfoAlsatian extends AppCompatActivity {
 
             public void onClick(View v) {
 
-                Intent intent = new Intent(PetInfoAlsatian.this, MainActivity.class);
+                Intent intent = new Intent(PetInfoAlsatian.this, Dogs.class);
 
                 startActivity(intent);
             }
