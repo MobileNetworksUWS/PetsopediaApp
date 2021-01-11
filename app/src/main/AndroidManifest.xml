@@ -19,6 +19,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Petsopedia"
         tools:ignore="GoogleAppIndexingWarning">
+<!--        <activity android:name=".PetInfoAlsatian"></activity>-->
+<!--        <activity android:name=".PetInfoCollie"></activity>-->
+<!--        <activity android:name=".PetInfoLabrador"></activity>-->
+<!--        <activity android:name=".PetInfoBombay"></activity>-->
+<!--        <activity android:name=".PetInfoShorthair"></activity>-->
+<!--        <activity android:name=".PetInfoPersian"></activity>-->
+<!--        <activity android:name=".PetInfoDutch"></activity>-->
+<!--        <activity android:name=".PetInfoGiant"></activity>-->
+<!--        <activity android:name=".PetInfoLop"></activity>-->
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -79,7 +88,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MapsActivity"
             tools:ignore="Instantiatable">

@@ -45,20 +45,6 @@ public class PetInfoDutch extends AppCompatActivity {
         playPauseIcon = findViewById(R.id.playpauseicon);
 
         playlistview = (LinearLayout) findViewById(R.id.playlistlistview);
-        playlistview.setVisibility(View.INVISIBLE);
-
-        Button soundInfo = (Button) findViewById(R.id.soundInfo);
-        soundInfo.setOnClickListener(new View.OnClickListener() {
-            boolean visible;
-
-            @Override
-            public void onClick(View view) {
-
-                visible = !visible;
-                playlistview.setVisibility(visible ? View.VISIBLE : View.INVISIBLE);
-            }
-
-        });
 
         mediaPlayer = new MediaPlayer();
         mediaPlayer = MediaPlayer.create(this, R.raw.dogsound);
@@ -135,62 +121,6 @@ public class PetInfoDutch extends AppCompatActivity {
         });
 
 
-        ParentListItems = new LinkedHashMap<>();
-        for (String HoldItem : TitleList) {
-            if (HoldItem.equals("General Information")) {
-                loadChild(generalInfo);
-            } else if (HoldItem.equals("Personality")) {
-                loadChild(personalityInfo);
-            } else if (HoldItem.equals("Nutrition")) {
-                loadChild(nutritionInfo);
-            } else if (HoldItem.equals("Common Health Problems")) {
-                loadChild(healthInfo);
-            } else
-                loadChild(defaultName);
-
-            ParentListItems.put(HoldItem, ChildList);
-        }
-
-
-        expandableListView = findViewById(R.id.listview);
-        final ExpandableListAdapter expandableListAdapter = new ListAdapter(this, TitleList, ParentListItems);
-        expandableListView.setAdapter(expandableListAdapter);
-
-    }
-
-    List<String> ChildList;
-    Map<String, List<String>> ParentListItems;
-    ExpandableListView expandableListView;
-
-    List<String> TitleList = new ArrayList<>();
-
-    {
-        TitleList.add("General Information");
-        TitleList.add("Personality");
-        TitleList.add("Nutrition");
-        TitleList.add("Common Health Problems");
-    }
-
-    String[] generalInfo = {
-            "Height", "Weight", "Coat", "Colour", "Lifespan"
-    };
-    String[] personalityInfo = {
-            "This is where information about the personality of the pet goes"
-    };
-    String[] nutritionInfo = {
-            "Nutritional information goes here"
-    };
-    String[] healthInfo = {
-            "Health issues"
-    };
-    String[] defaultName = {
-            ""
-    };
-
-    private void loadChild(String[] ParentElementName) {
-
-        ChildList = new ArrayList<>();
-        Collections.addAll(ChildList, ParentElementName);
     }
 
     private Handler handler = new Handler(new Handler.Callback() {
@@ -222,5 +152,4 @@ public class PetInfoDutch extends AppCompatActivity {
 
         return timeLabel;
     }
-
 }

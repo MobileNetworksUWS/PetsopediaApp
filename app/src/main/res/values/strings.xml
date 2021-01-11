@@ -22,8 +22,22 @@
 
     <!--pet information -->
     <string name="info_title">Pet Info</string>
+    <string name="general">General Information</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="coat">Coat</string>
+    <string name="colour">Colour</string>
+    <string name="lifespan">Lifespan</string>
+    <string name="personality">Personality</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="health">Common Health Problems</string>
+    <string name="sound">Sound</string>
+    <string name="play">Play Button</string>
+    <string name="pause">Pause Button</string>
+
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="back_arrow">Back Arrow</string>
 
     <!-- explore/animal page -->
     <string name="explore_title">Explore</string>
@@ -38,7 +52,31 @@
     <string name="go_button">Go</string>
     <string name="title_activity_maps">Map</string>
 
-    <string name="action_settings">Settings</string>
 
+
+    <!-- dogs -->
+    <string name="alsatian">Alsatian</string>
+    <string name="collie">Border Collie</string>
+    <string name="labrador">Labrador</string>
+
+    <!-- cats -->
+    <string name="bombay">Bombay</string>
+    <string name="shorthair">British Shorthair</string>
+    <string name="persian">Persian</string>
+
+    <!-- rabbits -->
+    <string name="dutch">Dutch</string>
+    <string name="lop">English Lop</string>
+    <string name="giant">Flemish Giant</string>
+
+<!-- labrador information -->
+    <string name="lab_height">55-57cm</string>
+    <string name="lab_weight">25-34kg</string>
+    <string name="lab_coat">Short &amp; dense</string>
+    <string name="lab_colour"> Yellow, black or chocolat</string>
+    <string name="lab_lifespan">12-13 yrs</string>
+    <string name="lab_personality">Kind, responsive, enthusiastic, active, playful. Good with children and friendly to other pets.</string>
+    <string name="lab_nutrition">Needs between 1500 and 1875 calories per day, depending on body weight.</string>
+    <string name="lab_health">Health issues include hip dysplasia, elbow dysplasia, obesity and progressive retinal atrophy.</string>
 
 </resources>

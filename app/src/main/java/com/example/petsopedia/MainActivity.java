@@ -12,7 +12,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button questionnaire;
     Button explore;
-    Button pet_info;
     Button map;
 
     @Override
@@ -40,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         explore.setOnClickListener(new View.OnClickListener() {
 
