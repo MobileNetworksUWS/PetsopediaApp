@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PetInfoAlsatian">
+    tools:context=".PetInfoLabrador">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,22 +34,47 @@
                 android:textColor="@android:color/black"
                 android:textSize="30sp" />
 
+
         </LinearLayout>
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tvResult"-->
+        <!--            android:layout_width="401dp"-->
+        <!--            android:layout_height="34dp"-->
+        <!--            android:layout_marginTop="547dp"-->
+        <!--            android:layout_marginEnd="411dp"-->
+        <!--            android:layout_marginBottom="143dp"-->
+        <!--            android:textSize="30sp" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="689dp"
             android:gravity="center"
-            android:orientation="horizontal" />
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="53dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 
     <ExpandableListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="638dp"
+        android:layout_height="533dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="96dp"
         android:paddingBottom="60dp">
 
 
