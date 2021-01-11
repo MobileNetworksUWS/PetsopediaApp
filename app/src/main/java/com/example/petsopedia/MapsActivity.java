@@ -185,7 +185,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 dataTransfer[1] = url;
 
                 getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(MapsActivity.this, "Searching Nearby Groomers", Toast.LENGTH_LONG).show();
+                Toast.makeText(MapsActivity.this, "Searching Nearby Parks", Toast.LENGTH_LONG).show();
                 break;
             case R.id.btn_petstore:
                 mMap.clear();
