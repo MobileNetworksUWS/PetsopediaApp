@@ -44,7 +44,7 @@
             android:background="#c0c0c0"/>
 
         <TextView
-            android:id="@+id/txResult"
+            android:id="@+id/txResultAlsatian"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
@@ -55,7 +55,7 @@
             android:layout_height="217dp"
             android:contentDescription="@string/alsatian"
             android:padding="3dip"
-            android:src="@drawable/alsatian1" />
+            android:src="@drawable/alsatian" />
 
         <View
             android:layout_marginTop="10dp"

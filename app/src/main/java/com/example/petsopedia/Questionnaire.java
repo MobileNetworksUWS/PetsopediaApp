@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,9 +18,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Questionnaire extends AppCompatActivity {
 
     ImageView backbutton;
-    Button goButton;
-    TextView result;
-    EditText petName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +40,6 @@ public class Questionnaire extends AppCompatActivity {
             }
         });
 
-        // String[] typeList = {"Dogs", "Rabbits","Cats"};
         String[] dogBreeds = {"Alsatian", "Border Collie", "Labrador"};
         String[] catBreeds = {"Bombay", "British Shorthair", "Persian"};
         String[] rabbitBreeds = {"Dutch", "English Lop", "Flemish Giant"};
@@ -50,8 +47,7 @@ public class Questionnaire extends AppCompatActivity {
         Spinner typeSpinner = (Spinner) findViewById(R.id.which_spinner);
         Spinner breedSpinner = (Spinner) findViewById(R.id.breed_spinner);
         Button goButton = (Button) findViewById(R.id.goQuestionnaire);
-        petName  = (EditText) findViewById(R.id.petName);
-        result = (TextView) findViewById(R.id.txResult);
+        EditText petName  = (EditText) findViewById(R.id.petName);
 
 // ~~~ create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> typeAdapter = ArrayAdapter.createFromResource(this,
@@ -106,6 +102,8 @@ public class Questionnaire extends AppCompatActivity {
 
         breedSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()
         {
+
+
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
             {
@@ -116,8 +114,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-//                                String name = petName.getText().toString();
-//                                result.setText("Name:\t" + name );
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Alsatian" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoAlsatian.class);
 
                                 startActivity(intent);
@@ -131,7 +129,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Border Collie" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoCollie.class);
 
                                 startActivity(intent);
@@ -144,7 +143,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Labrador" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoLabrador.class);
 
                                 startActivity(intent);
@@ -157,7 +157,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Bombay Cat" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoBombay.class);
 
                                 startActivity(intent);
@@ -170,7 +171,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the British Shorthair" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoShorthair.class);
 
                                 startActivity(intent);
@@ -183,7 +185,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Persian Cat" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoPersian.class);
 
                                 startActivity(intent);
@@ -196,7 +199,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Dutch Rabbit" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoDutch.class);
 
                                 startActivity(intent);
@@ -209,7 +213,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the English Lop" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoLop.class);
 
                                 startActivity(intent);
@@ -222,7 +227,8 @@ public class Questionnaire extends AppCompatActivity {
 
                             public void onClick(View v)
                             {
-
+                                String value = petName.getText().toString();
+                                Toast.makeText(Questionnaire.this, "Fetching data for " + value + " the Flemish Giant" , Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(Questionnaire.this, PetInfoGiant.class);
 
                                 startActivity(intent);
