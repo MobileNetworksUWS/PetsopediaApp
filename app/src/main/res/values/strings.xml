@@ -10,14 +10,6 @@
     <string name="pet_type">Which Pet?</string>
     <string name="pet_breed">What Breed?</string>
 
-    <!--    spinners-->
-
-    <string-array name="pet_type">
-        <item>Dog</item>
-        <item>Cat</item>
-        <item>Rabbit</item>
-    </string-array>
-
     <!--pet information -->
     <string name="info_title">Pet Info</string>
     <string name="general">General Information</string>
@@ -71,10 +63,30 @@
     <string name="lab_height">55-57cm</string>
     <string name="lab_weight">25-34kg</string>
     <string name="lab_coat">Short &amp; dense</string>
-    <string name="lab_colour"> Yellow, black or chocolat</string>
+    <string name="lab_colour"> Yellow, black or chocolate</string>
     <string name="lab_lifespan">12-13 yrs</string>
     <string name="lab_personality">Kind, responsive, enthusiastic, active, playful. Good with children and friendly to other pets.</string>
     <string name="lab_nutrition">Needs between 1500 and 1875 calories per day, depending on body weight.</string>
     <string name="lab_health">Health issues include hip dysplasia, elbow dysplasia, obesity and progressive retinal atrophy.</string>
 
+
+    <!-- alsatian information -->
+    <string name="alsatian_height">24-26 inches (male), 22-24 inches (female)</string>
+    <string name="alsatian_weight">65-90 pounds (male), 50-70 pounds (female)</string>
+    <string name="alsatian_coat">Medium-length, double coat consisting of a dense, harsh, and close-lying outer coat with a softer undercoat</string>
+    <string name="alsatian_colour">Saddle Coat, Black, Panda, Sable, White</string>
+    <string name="alsatian_lifespan">12-14 yrs</string>
+    <string name="alsatian_personality">Confident, Courageous, Smart</string>
+    <string name="alsatian_nutrition">On the average, German Shepherds needs an average of 1740 and 2100 caloric intake.  While less active and older dogs may require lesser calorie count.</string>
+    <string name="alsatian_health">Health issues include Degenerative Myelopathy (DM), Epilepsy, Gastric Dilatation Volvulous (aka Torsion or Bloat) and Hip and/or Elbow Dysplasia</string>
+
+    <!-- collie information -->
+    <string name="collie_height">Male: 48–56 cm, Female: 46–53 cm</string>
+    <string name="collie_weight">Male: 14–20 kg, Female: 12–19 kg</string>
+    <string name="collie_coat">There are two types of coat in the breed. The rough coat is medium-length and feathered, while the smooth coat is shorter and coarser. Both are dense, weather-resistant double coats.</string>
+    <string name="collie_colour">Black, White, Blue, Blue Merle, Lilac, Brindle, Red Merle, Chocolate, Liver, Sable Merle, Gold, Red</string>
+    <string name="collie_lifespan">10-17 yrs</string>
+    <string name="collie_personality">Tenacious, Energetic, Intelligent, Keen, Responsive, Alert</string>
+    <string name="collie_nutrition">A growing Border Collie would need 1,400 calories per day since they’re more likely to be highly active. For average adults, an average of 1,000 calories should be enough for them to thrive. While less active and older dogs may require lesser calorie count.</string>
+    <string name="collie_health">Health issues include hip dysplasia, progressive renal atrophy, deafness, epilepsy, collie eye anomaly, neuronal ceroid lipofuscinosis, and trapped neutrophil syndrome.</string>
 </resources>

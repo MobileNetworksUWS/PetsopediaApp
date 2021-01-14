@@ -7,18 +7,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent">
 
-    <!--    <Button-->
-    <!--        android:id="@+id/B_search"-->
-    <!--        android:layout_width="100dp"-->
-    <!--        android:layout_height="45dp"-->
-    <!--        android:layout_alignParentTop="true"-->
-    <!--        android:layout_alignParentRight="true"-->
-    <!--        android:layout_toEndOf="@+id/TF_location"-->
-    <!--        android:onClick="onClick"-->
-    <!--        android:text="Search"-->
-    <!--        android:layout_toRightOf="@+id/TF_location" />-->
-
-
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -27,30 +15,30 @@
         tools:context=".MapsActivity" />
 
     <Button
-        android:id="@+id/btn_vets"
-        android:layout_width="100dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="282dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="56dp"
-        android:onClick="onClick"
-        android:text="Vets" />
-
-    <Button
         android:id="@+id/btn_petstore"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="155dp"
-        android:layout_marginEnd="155dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="22dp"
         android:onClick="onClick"
         android:text="Pet Store" />
+
+    <Button
+        android:id="@+id/btn_vets"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="281dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="22dp"
+        android:onClick="onClick"
+        android:text="Vets" />
 
     <Button
         android:id="@+id/btn_parks"
@@ -59,9 +47,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="272dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="22dp"
         android:onClick="onClick"
         android:text="Parks" />
 

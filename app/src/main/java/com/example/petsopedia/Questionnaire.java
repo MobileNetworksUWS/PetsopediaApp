@@ -40,6 +40,7 @@ public class Questionnaire extends AppCompatActivity {
             }
         });
 
+        String[] petTypes = {"Dog", "Cat", "Rabbit"};
         String[] dogBreeds = {"Alsatian", "Border Collie", "Labrador"};
         String[] catBreeds = {"Bombay", "British Shorthair", "Persian"};
         String[] rabbitBreeds = {"Dutch", "English Lop", "Flemish Giant"};
@@ -50,8 +51,8 @@ public class Questionnaire extends AppCompatActivity {
         EditText petName  = (EditText) findViewById(R.id.petName);
 
 // ~~~ create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter<CharSequence> typeAdapter = ArrayAdapter.createFromResource(this,
-                R.array.pet_type, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> typeAdapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_spinner_item, petTypes);
         ArrayAdapter<CharSequence> dogBreedAdapter = new ArrayAdapter<CharSequence>(this,
                 android.R.layout.simple_spinner_item, dogBreeds);
         ArrayAdapter<CharSequence> catBreedAdapter = new ArrayAdapter<CharSequence>(this,

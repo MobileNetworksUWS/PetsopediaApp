@@ -48,21 +48,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
-
-    <Spinner
-        android:id="@+id/breed_spinner"
-        android:layout_width="@dimen/textfield_width"
-        android:layout_height="@dimen/spinner_height"
-        android:fontFamily="serif"
-        android:labelFor="@id/breed_spinner"
-        android:text="@string/pet_breed"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        app:layout_constraintVertical_bias="0.331" />
 
     <Spinner
         android:id="@+id/which_spinner"
@@ -76,19 +62,46 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintVertical_bias="0.454" />
+
+    <Button
+        android:id="@+id/goQuestionnaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="@string/go_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <Spinner
+        android:id="@+id/breed_spinner"
+        android:layout_width="@dimen/textfield_width"
+        android:layout_height="@dimen/spinner_height"
+        android:fontFamily="serif"
+        android:labelFor="@id/breed_spinner"
+        android:text="@string/pet_breed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.566" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="216dp"
-        android:layout_height="wrap_content"
+        android:layout_width="218dp"
+        android:layout_height="42dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9">
+        app:layout_constraintVertical_bias="0.680">
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -106,36 +119,12 @@
             <RadioButton
                 android:id="@+id/femaleRadio"
                 android:layout_width="108dp"
-                android:fontFamily="serif"
                 android:layout_height="match_parent"
+                android:fontFamily="serif"
                 android:text="@string/female" />
 
         </RadioGroup>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/goQuestionnaire"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/buttons"
-        android:text="@string/go_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
-
-        <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="417dp"
-        android:layout_height="538dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/cat2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
