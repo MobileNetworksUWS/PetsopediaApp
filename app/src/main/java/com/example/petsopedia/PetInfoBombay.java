@@ -47,7 +47,7 @@ public class PetInfoBombay extends AppCompatActivity {
         playlistview = (LinearLayout) findViewById(R.id.playlistlistview);
 
         mediaPlayer = new MediaPlayer();
-        mediaPlayer = MediaPlayer.create(this, R.raw.dogsound);
+        mediaPlayer = MediaPlayer.create(this, R.raw.catsound);
 
         mediaPlayer.seekTo(0);
         totalLength = mediaPlayer.getDuration();
