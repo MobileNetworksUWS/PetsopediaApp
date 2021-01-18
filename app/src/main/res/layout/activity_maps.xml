@@ -18,6 +18,7 @@
         android:id="@+id/btn_petstore"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:background="@drawable/buttons"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -25,12 +26,13 @@
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="22dp"
         android:onClick="onClick"
-        android:text="Pet Store" />
+        android:text="@string/store_button" />
 
     <Button
         android:id="@+id/btn_vets"
         android:layout_width="100dp"
         android:layout_height="60dp"
+        android:background="@drawable/buttons"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -38,12 +40,13 @@
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="22dp"
         android:onClick="onClick"
-        android:text="Vets" />
+        android:text="@string/vet_button" />
 
     <Button
         android:id="@+id/btn_parks"
         android:layout_width="110dp"
         android:layout_height="60dp"
+        android:background="@drawable/buttons"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
@@ -51,7 +54,7 @@
         android:layout_marginEnd="273dp"
         android:layout_marginBottom="22dp"
         android:onClick="onClick"
-        android:text="Parks" />
+        android:text="@string/park_button" />
 
 </RelativeLayout>
 

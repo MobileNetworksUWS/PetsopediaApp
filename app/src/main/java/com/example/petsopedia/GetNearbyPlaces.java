@@ -13,10 +13,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * @author Ankit singh
- */
-
 class GetNearbyPlaces extends AsyncTask<Object, String, String> {
 
     private String googlePlacesData;

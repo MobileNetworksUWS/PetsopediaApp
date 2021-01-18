@@ -42,7 +42,10 @@
     <string name="go_button">Go</string>
     <string name="title_activity_maps">Map</string>
 
-
+    <!-- map page -->
+    <string name="vet_button">Vets</string>
+    <string name="park_button">Parks</string>
+    <string name="store_button">Pet Store</string>
 
     <!-- dogs -->
     <string name="alsatian">Alsatian</string>
