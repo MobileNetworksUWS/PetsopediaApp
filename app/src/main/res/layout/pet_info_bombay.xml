@@ -51,11 +51,12 @@
 
         <ImageView
             android:id="@+id/imageImg"
-            android:layout_width="wrap_content"
-            android:layout_height="249dp"
+            android:layout_width="375dp"
+            android:layout_height="226dp"
+            android:contentDescription="@string/bombay"
             android:padding="3dip"
-            android:src="@drawable/bombay"
-            android:contentDescription="@string/labrador" />
+            android:layout_gravity="center"
+            android:src="@drawable/bombay" />
 
         <View
             android:layout_marginTop="10dp"
@@ -93,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_height" />
+                android:text="@string/bombay_height" />
         </LinearLayout>
 
         <LinearLayout
@@ -115,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_weight" />
+                android:text="@string/bombay_weight" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,7 +139,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_coat" />
+                android:text="@string/bombay_coat" />
         </LinearLayout>
 
         <LinearLayout
@@ -161,7 +162,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_colour" />
+                android:text="@string/bombay_colour" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -183,7 +184,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_lifespan" />
+                android:text="@string/bombay_lifespan" />
         </LinearLayout>
 
         <View
@@ -208,7 +209,7 @@
             android:layout_height="wrap_content"
             android:padding="3dip"
             android:textSize="16sp"
-            android:text="@string/lab_personality" />
+            android:text="@string/bombay_personality" />
 
         <View
             android:layout_marginTop="10dp"
@@ -232,7 +233,7 @@
             android:layout_height="wrap_content"
             android:padding="3dip"
             android:textSize="16sp"
-            android:text="@string/lab_nutrition" />
+            android:text="@string/bombay_nutrition" />
 
 
         <View
@@ -257,7 +258,7 @@
             android:layout_height="wrap_content"
             android:padding="3dip"
             android:textSize="16sp"
-            android:text="@string/lab_health" />
+            android:text="@string/bombay_health" />
 
 
         <View

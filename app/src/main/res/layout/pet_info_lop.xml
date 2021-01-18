@@ -55,7 +55,7 @@
             android:layout_height="249dp"
             android:padding="3dip"
             android:src="@drawable/lop"
-            android:contentDescription="@string/labrador" />
+            android:contentDescription="@string/lop" />
 
         <View
             android:layout_marginTop="10dp"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_height" />
+                android:text="@string/lop_height" />
         </LinearLayout>
 
         <LinearLayout
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_weight" />
+                android:text="@string/lop_weight" />
         </LinearLayout>
 
         <LinearLayout
@@ -138,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_coat" />
+                android:text="@string/lop_coat" />
         </LinearLayout>
 
         <LinearLayout
@@ -161,7 +161,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_colour" />
+                android:text="@string/lop_colour" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -183,7 +183,7 @@
                 android:layout_height="wrap_content"
                 android:padding="3dip"
                 android:textSize="16sp"
-                android:text="@string/lab_lifespan" />
+                android:text="@string/lop_lifespan" />
         </LinearLayout>
 
         <View
@@ -208,7 +208,7 @@
             android:layout_height="wrap_content"
             android:padding="3dip"
             android:textSize="16sp"
-            android:text="@string/lab_personality" />
+            android:text="@string/lop_personality" />
 
         <View
             android:layout_marginTop="10dp"
@@ -232,7 +232,7 @@
             android:layout_height="wrap_content"
             android:padding="3dip"
             android:textSize="16sp"
-            android:text="@string/lab_nutrition" />
+            android:text="@string/lop_nutrition" />
 
 
         <View
@@ -257,7 +257,7 @@
             android:layout_height="wrap_content"
             android:padding="3dip"
             android:textSize="16sp"
-            android:text="@string/lab_health" />
+            android:text="@string/lop_health" />
 
 
         <View

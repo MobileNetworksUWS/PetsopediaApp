@@ -89,4 +89,65 @@
     <string name="collie_personality">Tenacious, Energetic, Intelligent, Keen, Responsive, Alert</string>
     <string name="collie_nutrition">A growing Border Collie would need 1,400 calories per day since they’re more likely to be highly active. For average adults, an average of 1,000 calories should be enough for them to thrive. While less active and older dogs may require lesser calorie count.</string>
     <string name="collie_health">Health issues include hip dysplasia, progressive renal atrophy, deafness, epilepsy, collie eye anomaly, neuronal ceroid lipofuscinosis, and trapped neutrophil syndrome.</string>
+
+    <!-- bombay information -->
+    <string name="bombay_height">12-13 inches (male), 11-12 inches (female)</string>
+    <string name="bombay_weight">Male: large: 12 lbs. Female: medium: 8-12 lbs.</string>
+    <string name="bombay_coat">Short and smooth</string>
+    <string name="bombay_colour">Black</string>
+    <string name="bombay_lifespan">9-13 yrs</string>
+    <string name="bombay_personality">Active, curious cats and adapt very easily to change</string>
+    <string name="bombay_nutrition">The Bombay breed does not have any special dietary requirements. As with all cats, it is recommended that you provide high-quality wet food and some quality dry food as well.</string>
+    <string name="bombay_health">Both pedigreed cats and mixed-breed cats have varying incidences of health problems that may be genetic in nature. Bombays are generally healthy, although craniofacial defect may occur.</string>
+
+    <!-- britshort information -->
+    <string name="britshort_height">12-13 inches (male), 11-12 inches (female)</string>
+    <string name="britshort_weight">Male: large: >5 kg. Female: large: >5 kg.</string>
+    <string name="britshort_coat">Short/Medium and smooth</string>
+    <string name="britshort_colour">White, Blue, Black, Cream, Red, Brown, Silver, Cameo, Bluecream, Tortoiseshell, Torbie, Smoke, Shaded</string>
+    <string name="britshort_lifespan">7-12 yrs</string>
+    <string name="britshort_personality">The British shorthair is a very pleasant cat to have as a companion. They are easy going and placid. The British shorthair is a fiercely loyal, loving cat and will attach themselves to all family members.</string>
+    <string name="britshort_nutrition">Animal protein as British Shorthairs are muscular cats. Vegetable diets are largely unnecessary. Grains and dairy should be avoided.</string>
+    <string name="britshort_health">British Shorthairs are prone to a disease called hypertrophic cardiomyopathy, which can lead to heart failure. Whilst this condition is not curable, it can be treated with lifelong medication.</string>
+
+    <!-- persian information -->
+    <string name="persian_height"> Males: 10 to 15 inches, Females: 10 to 14 inches </string>
+    <string name="persian_weight">Males: 3.6 to 6.8 kg, Females: 3.2 to 4.5 kg</string>
+    <string name="persian_coat">Long coat which requires daily grooming.</string>
+    <string name="persian_colour">Tabby, Himalayan, smoke, shaded, solid, silver and bi-colour</string>
+    <string name="persian_lifespan">12-15 years</string>
+    <string name="persian_personality">The Persian has a sweet, gentle personality and is a quiet companion.</string>
+    <string name="persian_nutrition">Persian cats need a balanced diet that consists of both wet and dry foods. Wet food in the morning and evening and having a fresh bowl of dry food and clean water available at all times. Protein is also very important for your Persian cat.</string>
+    <string name="persian_health">Health issues include polycystic kidney disease (PKD), progressive retinal atrophy (PRA), hypertrophic cardiomyopathy (HCM), bladder stones, cystitis (bladder infections), and liver shunts</string>
+
+    <!-- dutch information -->
+    <string name="dutch_height"> Males: 8 to 10 inches, Females: 6 to 8 inches </string>
+    <string name="dutch_weight">Small to medium, weighing about 2kg (4.5lb)</string>
+    <string name="dutch_coat">Short, glossy fur. Minimal grooming required.</string>
+    <string name="dutch_colour">White with black, blue, grey or chocolate markings.</string>
+    <string name="dutch_lifespan">5-8 years</string>
+    <string name="dutch_personality">Intelligent, gentle and easy to train - needs lots of social interaction.</string>
+    <string name="dutch_nutrition">A rabbits daily diet should consist of: At least their own body size in hay. A handful of suitable fresh greens twice a day. One tablespoon of commercial rabbit nuggets (twice daily if your rabbit weighs over 3.5kg)</string>
+    <string name="dutch_health">Dental disease, Respiratory tract disorders, Uterine cancer, Parasites, Gastrointestinal disorders.</string>
+
+    <!-- giant information -->
+    <string name="giant_height"> Males: 10 to 15 inches, Females: 10 to 14 inches </string>
+    <string name="giant_weight">Large rabbits, weighing about 6-7kg</string>
+    <string name="giant_coat">Short, glossy fur. Minimal grooming required.</string>
+    <string name="giant_colour">Black, Blue, Fawn, Light Grey, Sandy, Steel Grey, White.</string>
+    <string name="giant_lifespan">5-8 years</string>
+    <string name="giant_personality">The Flemish Giant is generally a docile breed, and these giant pet rabbits make good companions and loving family pets.</string>
+    <string name="giant_nutrition">A rabbits daily diet should consist of: At least their own body size in hay. A handful of suitable fresh greens twice a day. One tablespoon of commercial rabbit nuggets (twice daily if your rabbit weighs over 3.5kg)</string>
+    <string name="giant_health">Dental disease, Respiratory tract disorders, Uterine cancer, Parasites, Gastrointestinal disorders.</string>
+
+    <!-- lop information -->
+    <string name="lop_height"> Males: 10 to 15 inches, Females: 10 to 14 inches </string>
+    <string name="lop_weight">Large, weighing about 5kg (11lb).</string>
+    <string name="lop_coat">Short, stiff fur. Minimal grooming required.</string>
+    <string name="lop_colour">Fawn, white, black or gold.</string>
+    <string name="lop_lifespan">5-7 years</string>
+    <string name="lop_personality">Laid-back and inquisitive.</string>
+    <string name="lop_nutrition">A rabbits daily diet should consist of: At least their own body size in hay. A handful of suitable fresh greens twice a day. One tablespoon of commercial rabbit nuggets (twice daily if your rabbit weighs over 3.5kg)</string>
+    <string name="lop_health">Dental disease, Otitis, Respiratory tract disorders, Spinal injury, Parasites, Gastrointestinal disorders.</string>
+
 </resources>
